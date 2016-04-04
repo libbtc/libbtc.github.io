@@ -13,15 +13,15 @@ dependencies. You must therefore initialize the library before working
 with it
 
 ```C
-ecc_start(); //will initialize crypto environment
+btc_ecc_start(); //will initialize crypto environment
 ```
 
 Usually you don't need to call the shutdown function as the operating
 system will take care of reclaiming resources, but if your application
-uses libgit2 in some areas which are not usually active, you can use
+uses libbtc in some areas which are not usually active, you can use
 
 ```C
-ecc_stop();
+btc_ecc_stop();
 ```
 
 to ask the library to clean up the global state. The cleanup will be
